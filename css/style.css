@@ -266,10 +266,10 @@ a:hover, a:active {
 .post .post-content a {
   text-decoration: none;
   letter-spacing: 1px;
-  color: #4786D6;
+  color: #669999;
 }
 .post .post-content a:hover {
-  color: #2F69B3;
+  color: #666666;
 }
 .post .post-content h3 {
   color: #5F5F5F;
@@ -690,6 +690,6 @@ a.btn {
   }
 
   .share {
-    display: grid;
+    display: flex;
   }
 }
