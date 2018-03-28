@@ -40,6 +40,12 @@ a:active {
 }
 
 
+
+
+
+
+
+
 /*basic styles ends*/
 
 
@@ -116,6 +122,12 @@ a:active {
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+
+
+
+
+
+
 
 
 /*animation ends*/
@@ -462,6 +474,12 @@ a:active {
 }
 
 
+
+
+
+
+
+
 /*for archive*/
 
 .archive {
@@ -506,6 +524,12 @@ a:active {
 .list-with-title .listing .listing-post a:hover {
   color: #4786D6;
 }
+
+
+
+
+
+
 
 
 /* share */
@@ -569,6 +593,12 @@ a:active {
 }
 
 
+
+
+
+
+
+
 /* about */
 
 .about {
@@ -578,6 +608,12 @@ a:active {
 .about h3 {
   font-size: 22px;
 }
+
+
+
+
+
+
 
 
 /* links*/
@@ -593,6 +629,12 @@ a:active {
 .links a {
   cursor: pointer;
 }
+
+
+
+
+
+
 
 
 /* 评论样式 */
@@ -617,11 +659,23 @@ a:active {
 }
 
 
+
+
+
+
+
+
 /* 默认评论样式 */
 
 #fb_comments_container {
   margin: 30px;
 }
+
+
+
+
+
+
 
 
 /* 按钮样式 */
@@ -683,6 +737,12 @@ a.btn {
 [role="tags"] {
   padding: 6px 12px;
 }
+
+
+
+
+
+
 
 
 /* Menu样式 */
@@ -790,4 +850,38 @@ a.btn {
   .share {
     display: flex;
   }
+}
+
+
+
+
+@keyframes animation_logo {
+  0% {
+    transform: rotate(0)
+  }
+  25% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0)
+  }
+}
+
+.sidebar .logo-title .title img {
+  animation: animation_logo 2.5s linear 1s infinite normal;
+}
+
+
+.sidebar .logo-title .title img:hover {
+  animation-play-state: paused;
+}
+
+.sidebar .logo-title .title img:active {
+  animation-play-state: paused;
 }
