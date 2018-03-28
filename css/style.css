@@ -46,6 +46,7 @@ a:active {
 
 
 
+
 /*basic styles ends*/
 
 
@@ -122,6 +123,7 @@ a:active {
   -o-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }
+
 
 
 
@@ -480,6 +482,7 @@ a:active {
 
 
 
+
 /*for archive*/
 
 .archive {
@@ -524,6 +527,7 @@ a:active {
 .list-with-title .listing .listing-post a:hover {
   color: #4786D6;
 }
+
 
 
 
@@ -599,6 +603,7 @@ a:active {
 
 
 
+
 /* about */
 
 .about {
@@ -608,6 +613,7 @@ a:active {
 .about h3 {
   font-size: 22px;
 }
+
 
 
 
@@ -629,6 +635,7 @@ a:active {
 .links a {
   cursor: pointer;
 }
+
 
 
 
@@ -665,11 +672,13 @@ a:active {
 
 
 
+
 /* 默认评论样式 */
 
 #fb_comments_container {
   margin: 30px;
 }
+
 
 
 
@@ -737,6 +746,7 @@ a.btn {
 [role="tags"] {
   padding: 6px 12px;
 }
+
 
 
 
@@ -852,36 +862,67 @@ a.btn {
   }
 }
 
+@-webkit-keyframes animation_logo {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+  25% {
+    -webkit-transform: rotate(8deg);
+    transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  75% {
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0)
+  }
+}
+
 
 
 
 @keyframes animation_logo {
   0% {
+    -webkit-transform: rotate(0);
     transform: rotate(0)
   }
   25% {
+    -webkit-transform: rotate(8deg);
     transform: rotate(8deg);
   }
   50% {
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   75% {
+    -webkit-transform: rotate(-8deg);
     transform: rotate(-8deg);
   }
   100% {
+    -webkit-transform: rotate(0);
     transform: rotate(0)
   }
 }
 
 .sidebar .logo-title .title img {
+  -webkit-animation: animation_logo 2.5s linear 1s infinite normal;
   animation: animation_logo 2.5s linear 1s infinite normal;
 }
 
 
 .sidebar .logo-title .title img:hover {
+  -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
 
 .sidebar .logo-title .title img:active {
+  -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
